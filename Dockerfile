@@ -1,5 +1,5 @@
-FROM sameersbn/ubuntu:14.04.20160710
-MAINTAINER sameer@damagehead.com
+FROM jlospinoso/ubuntu:14.04.20160710
+MAINTAINER josh@lospi.net
 
 ENV GITLAB_VERSION=8.9.6 \
     GITLAB_SHELL_VERSION=3.0.0 \

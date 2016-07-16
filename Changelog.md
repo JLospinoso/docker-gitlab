@@ -237,7 +237,7 @@ This file only reflects the changes that are made in this image. Please refer to
 - allow user to override `OAUTH_ENABLED` setting
 
 **8.0.4-1**
-- update baseimage to `sameersbn/ubuntu:14.04.20151011`
+- update baseimage to `jlospinoso/ubuntu:14.04.20151011`
 
 **8.0.4**
 - gitlab: upgrade to CE v.8.0.4
@@ -503,7 +503,7 @@ This file only reflects the changes that are made in this image. Please refer to
 - added GITLAB_HTTPS_HSTS_MAXAGE configuration option (advanced config)
 - upgrade to gitlab-shell 1.9.8
 - purge development packages after install. shaves off ~300MB from the image.
-- rebase image on sameersbn/debian:jessie.20140918 base image
+- rebase image on jlospinoso/debian:jessie.20140918 base image
 - added GITLAB_SSH_HOST configuration option
 - added GITLAB_USERNAME_CHANGE configuration option
 
@@ -524,7 +524,7 @@ This file only reflects the changes that are made in this image. Please refer to
 
 **7.2.0**
 - upgrade to gitlab-ce 7.2.0
-- update to the sameersbn/ubuntu:14.04.20140818 baseimage
+- update to the jlospinoso/ubuntu:14.04.20140818 baseimage
 - remove /var/lib/apt/lists to optimize image size.
 - disable UsePrivilegeSeparation in sshd configuration, fixes #122
 - added OAUTH_BLOCK_AUTO_CREATED_USERS configuration option
@@ -535,7 +535,7 @@ This file only reflects the changes that are made in this image. Please refer to
 - added support for jira issue tracker
 - added support for redmine issue tracker
 - update to gitlab-shell 1.9.7
-- update to the sameersbn/ubuntu:14.04.20140812 baseimage
+- update to the jlospinoso/ubuntu:14.04.20140812 baseimage
 
 **7.1.1**
 - removed "add_header X-Frame-Options DENY" setting from the nginx config. fixes #110
@@ -547,7 +547,7 @@ This file only reflects the changes that are made in this image. Please refer to
 - upgrade to gitlab-ce 7.1.0
 - clone gitlab-ce and gitlab-shell sources from the git repo.
 - disable pam authentication module in sshd
-- update to the sameersbn/ubuntu:14.04.20140628 baseimage
+- update to the jlospinoso/ubuntu:14.04.20140628 baseimage
 - no more root access over ssh, use nsenter instead
 - upgrade to nginx-1.6.x series from the nginx/stable ppa
 
@@ -578,8 +578,8 @@ This file only reflects the changes that are made in this image. Please refer to
 - added GITLAB_PROJECTS_VISIBILITY configuration option to specify the default project visibility level.
 - generate and store ssh host keys at the data store.
 - default GITLAB_PROJECTS_LIMIT is now set to 100
-- use sameersbn/ubuntu:14.04.20140508 base image, the trusted build of sameersbn/ubuntu:14.04.20140505 seems to be broken
-- use sameersbn/ubuntu:14.04.20140505 base image
+- use jlospinoso/ubuntu:14.04.20140508 base image, the trusted build of jlospinoso/ubuntu:14.04.20140505 seems to be broken
+- use jlospinoso/ubuntu:14.04.20140505 base image
 - added CA_CERTIFICATES_PATH configuration option to specify trusted root certificates.
 - added SSL support
 - added SSL_DHPARAM_PATH configuration option to specify path of dhparam.pem file.
@@ -601,7 +601,7 @@ This file only reflects the changes that are made in this image. Please refer to
 - added GITLAB_SIGNIN setting to enable or disable standard login form
 - upgraded to gitlab-ce version 6.8.0
 - added support for linking with redis container.
-- use sameersbn/ubuntu as the base docker image
+- use jlospinoso/ubuntu as the base docker image
 - install postgresql-client to fix restoring backups when used with a postgresql database backend.
 
 **6.7.5**
